@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Code Review</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <h1>The Code Review</h1>
+    </header>
+
+    <section>
+      <div id="main-page">
+        <form action="post">
+          <div id="heading">
+            <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox.</p>
+            <hr>
+          </div>
+
+            <fieldset>
+
+              <legend>Contact Information</legend>
+
+              <ul class="flex-outer">
+                <li>
+                  <label for="full_name">Full Name</label>
+                  <input id="full_name" type="text" name="full_name" placeholder="Required">
+                </li>
+                <li>
+                  <label for="email_address">Email Address</label>
+                  <input id="email_address" type="email" name="email_address" placeholder="Required">
+                </li>
+                <li>
+                  <label for="phone_number">Phone Number</label>
+                  <input id="phone_number" type="tel" name="phone_number">
+                </li>
+                <li>
+                  <label for="address">Street Address</label>
+                  <input id="address" type="text" name="address">
+                </li>
+                <li>
+                  <label for="city">City</label>
+                  <input id="city" type="text" name="city">
+                </li>
+                <li>
+                  <label for="choose_state">State</label>
+                  <select id="choose_state" class="form-item__element--select" name="state">
+
+                    <option disabled selected value="">Choose State</option>
+                    <option value="tennesse">Tennesse</option>
+                    <option value="texas">Texas</option>
+
+                  </select>
+
+
+
+                </li>
+                <li>
+                  <label for="zip">Zip Code</label>
+                  <input id="zip" type="text" name="zip">
+                </li>
+            </ul>
+            </fieldset>
+
+            <hr>
+            <fieldset>
+
+              <legend>Newsletter</legend>
+              <p>Select the newsletters you would like to recieve.</p>
+              <ul class="flex-inner">
+                <li>
+                  <input type="checkbox" name="newsletter_type" value="html news" checked>HTML News
+                </li>
+                <li>
+                  <input type="checkbox" name="newsletter_type" value="css news">CSS News
+                </li>
+                <li>
+                  <input type="checkbox" name="newsletter_type" value="javascript news">Javascript News
+                </li>
+              </ul>
+
+                <p>Newsletter format</p>
+              <ul class="flex-inner">
+                <li>
+                  <input type="radio" name="newsletter_format" value="html">HTML
+                </li>
+                <li>
+                  <input type="radio" name="newsletter_format" value="plain text">Plain text
+                </li>
+              </ul>
+              <label for="other_topics">Other topics you'd like to hear about</label>
+
+              <textarea id="other_topics" name="name" rows="8"></textarea>
+
+              <input type="submit" value="Sign Up">
+              <p><em>Copyright The Code Review</em></p>
+
+            </fieldset>
+
+        </form>
+      </div>
+    </section>
+
+  </body>
+
+</html>

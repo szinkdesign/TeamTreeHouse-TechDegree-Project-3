@@ -1,0 +1,157 @@
+* {
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  line-height: 2;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+header {
+  background: #2d3945;
+  color: white;
+  display: flex;
+  padding: 20px;
+}
+
+section {
+  display: flex;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+  margin: 0px auto;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+h2, legend {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #2d3945;
+}
+
+
+#main-page {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+form {
+  margin: 0px 10px;
+}
+
+#heading {
+  text-align: center;
+}
+
+#heading p {
+  color: lightgray;
+}
+
+fieldset {
+  margin: 30px 0px 0px;
+  padding: 20px 0px 0px;
+  border: 0px;
+}
+#heading hr:first-of-type {
+  border-top: 6px solid #2d3945;
+}
+hr {
+  border-top: 2px solid #2d3945;
+}
+label {
+  font-weight: 100;
+  margin: 15px 0px 5px 0px;
+  display: block;
+}
+
+.flex-outer, .flex-inner {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0px;
+}
+.flex-outer li, .flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+}
+
+.flex-inner {
+  display: block;
+}
+input[type=text],input[type=email],input[type=tel],input[type=submit], select, textarea {
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color: #4ebbb5;
+  color: white;
+  font-weight: bold;
+}
+::placeholder,.form-item__element--select, p em {
+  color:#a8adb2;
+}
+
+input[placeholder] {
+  text-align: right;
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+cursor: pointer;
+}
+input, textarea, select {
+  background: #eff0f1;
+  border: 0px;
+  border-radius: 3px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+input:focus {
+outline-color: #2d3945;
+outline: .5px solid;
+}
+
+textarea {
+  width: 100%;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+fieldset p:last-of-type {
+  text-align: center;
+}
+fieldset p {
+  display: inline;
+}
+
+@media screen and (min-width: 768px) {
+  input[type=text],input[type=email],input[type=tel], select {
+    width: 70%;
+      padding: 10px;
+  }
+  #main-page {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  fieldset {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  fieldset label {
+    flex-grow: 1;
+  }
+}
