@@ -102,11 +102,9 @@ input[type=submit] {
 ::placeholder,.form-item__element--select, p em {
   color:#a8adb2;
 }
-
-input[placeholder] {
+.flex-outer li input:nth-child(-n+2)::placeholder {
   text-align: right;
 }
-
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
